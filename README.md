@@ -1,6 +1,10 @@
 ProgressBar-Stream
 ==================
 
+>
+> Wrapper for [progress](https://www.npmjs.com/package/progress) and [progress-stream](https://www.npmjs.com/package/progress-stream)
+>
+
 Render an ascii progress bar to display stream progress.
 
 Installation
@@ -14,7 +18,8 @@ Usage
 ```javascript
 var progress = require('progressbar-stream');
 
-input.pipe(progress({total: input.length}).pipe(output);
+var input = fs.createReadStream('file.txt');
+var length = fs.statSync('file.txt').size;
+input.pipe(progress({total: length}).pipe(...);
 ```
-
 
