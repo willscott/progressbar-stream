@@ -23,3 +23,11 @@ var length = fs.statSync('file.txt').size;
 input.pipe(progress({total: length}).pipe(...);
 ```
 
+Usage on Object Streams
+-----------------------
+```javascript
+var progress = require('progressbar-stream');
+
+var inputs = [1, 2, 3, 4, 5, 6, 7];
+from(inputs).pipe(progress({chunks: inputs.length})).pipe(...);
+```
