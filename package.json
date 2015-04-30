@@ -1,6 +1,6 @@
 {
   "name": "progressbar-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Render an ascii-art progress bar for a stream of a known size.",
   "main": "index.js",
   "scripts": {
